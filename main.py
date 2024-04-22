@@ -7,6 +7,8 @@ try:
         host=host,
         port=6463,
         user=user,
+        password=password,
+        database=db_name,
         cursorclass=pymysql.cursors.DictCursor
     )   
     print("successfully connected...")
