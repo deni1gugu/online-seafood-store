@@ -20,7 +20,7 @@ try:
         decoded_rows = [[cell.decode('utf-8') if isinstance(cell, bytes) else cell for cell in row] for row in rows]
         
         for row in decoded_rows:
-           print(row)
+            print(row)
 
 except Exception as _ex:
     print("(INFO) Error while working with PostgresSQL", _ex)
