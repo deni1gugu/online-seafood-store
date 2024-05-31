@@ -1,8 +1,67 @@
-body{
-    background: #ECD59A;
+/* Общий стиль */
+body {
+  font-family: sans-serif;
 }
+
+
+/* Заголовок */
+header {
+  background-color: #072c4d; /* Цвет фона заголовка */
+  padding: 20px 0; /* Отступы */
+}
+
+
+/* Контейнер для логотипа и поисковой формы */
+.container {
+  display: flex; /* Размещение элементов в ряд */
+  justify-content: space-between; /* Размещение элементов с равным пространством */
+  align-items: center; /* Выравнивание по вертикали */
+  max-width: 1200px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Автоматическое центрирование */
+}
+
+/* Логотип */
+.logo {
+  max-width: 150px; /* Максимальная ширина логотипа */
+  height: auto; /* Автоматическая высота */
+}
+
+/* Поисковая форма */
+.search-form {
+  display: flex;
+  width: 100%; /* Занимает всю ширину */
+}
+
+/* Поле ввода */
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px; /*  Увеличиваем радиус скругления углов */
+  width: calc(100% - 60px); /*  Занимает всю ширину, за исключением кнопки */
+}
+
+
+/* Кнопка поиска */
+.search-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 20px; /*  Увеличиваем радиус скругления углов */
+  cursor: pointer;
+  width: 60px; /*  Ширина кнопки */
+}
+
+
+/* Иконка поиска */
+.search-button i {
+  font-size: 1.2em; /* Размер иконки */
+}
+
+
+
 nav {
-  background-color: #333; /* Цвет фона панели */
+  background-color: #000003; /* Цвет фона панели */
   color: #fff; /* Цвет текста */
   text-align: center; /* Выравнивание текста по центру */
 }
@@ -21,14 +80,8 @@ a {
   text-decoration: none; /* Убираем подчеркивание ссылок */
   color: #fff; /* Цвет текста ссылок */
 }
-nav .logo {
-    color: #46B8AB;
-    front-size: 50px;
-    margin-left: 100px;
-    font-weight: bold;
-    position: relative;
-    top: -15px;
-}
+
+
 nav h3 {
     color: #2ECC71;
     font-size: 28px;
@@ -55,7 +108,7 @@ nav ul .search-box button {
 }
 
 nav ul li:hover, nav ul a:hover{
-    color:#46BA;
+    color:#46BB;
 }
 
 
