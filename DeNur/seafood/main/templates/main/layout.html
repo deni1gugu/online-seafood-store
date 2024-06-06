@@ -13,10 +13,24 @@
 <body>
 <header>
 
-    <div>
+    <div class="wd-header-text set-cont-mb-s reset-last-child  whb-text-element"><strong><a href="tel:8-495-141-41-11">8-495-141-41-11</a></strong></div>
+    <div class="wd-header-text set-cont-mb-s reset-last-child  whb-text-element"><a href="mailto:info@seafood.moscow">info@seafood.moscow</a></div>
+    <div class="wd-header-text set-cont-mb-s reset-last-child  whb-text-element">г. Москва, ул. Котляковская, 4с5</div>
+
+
+    <div class="container">
+
+        <a href="#">
     <img src="{% static 'main/img/logo.poo.pmg.png' %}" alt="Лого" style="width: 125px; height: auto;">
     <span class="logo">Каралловый улов</span>
-    <h3></h3>
+         </a>
+    <form class="search-form">
+        <input type="text" placeholder="Поиск..." class="search-input">
+        <button type="submit" class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+    </form>
+
     </div>
         <nav>
 
@@ -26,7 +40,6 @@
                 <li><a href="{% url 'contact' %}">Контакты</a></li>
                 <li><a href="{% url 'korzin' %}">Корзина</a></li>
                 <li><a href="{% url 'tovar' %}">Товары</a></li>
-                <li class="search-box"><input type="text" placeholder="Поиск"><button type="submit">Найти</button></li>
 
             </ul>
         </nav>
