@@ -7,5 +7,6 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('contact', views.raka, name='contact'),
     path('korrrzin', views.korzin, name='korzin'),
-    path('tovar', views.tovar, name='tovar')
+    path('tovar', views.tovar, name='tovar'),
+    path('add_seafood/', views.add_seafood, name='add_seafood'), 
 ]
